@@ -5,6 +5,77 @@ body {
   overflow-x: hidden;
 }
 
+
+#home .large-header {
+background-image: url("../images/pattern.png"),url('../images/img-1.jpg');
+background-position: center;
+}
+.home-main {
+position: absolute;
+margin: 0;
+padding: 0;
+text-align: center;
+top: 80%;
+left: 50%;
+-webkit-transform: translate3d(-50%,-50%,0);
+transform: translate3d(-50%,-50%,0);
+}
+#countdown_dashboard {
+display: block;
+margin: 0px auto;
+overflow: hidden
+}
+.dash {
+padding-bottom: 10px;
+position: relative;
+opacity: 1;
+}
+.dash_title {
+font-size: 16px;
+width: 100%;
+color: #bbbbbb;
+display: block;
+clear: both;
+}
+.digit {
+color: #f9f9f9;
+font-size: 60px;
+font-weight: 300;
+display: inline-block;
+overflow: hidden;
+text-align: center;
+height: 110px;
+line-height: 110px;
+position: relative;
+vertical-align: middle;
+}
+
+@media(max-height:360px) {
+  .digit {
+      font-size: 30px;
+      height: 50px;
+      line-height: 50px;
+  }
+}
+@media(max-width:560px) {
+  #countdown_dashboard{
+      min-width: 300px;
+  }
+  .digit{
+      font-size: 30px;
+      height: 60px;
+      line-height: 60px;
+  }
+}
+@media(min-width:560px) and (max-width: 1024px){
+  .digit{
+      font-size: 40px;
+      height: 80px;
+      line-height: 80px;
+  }
+}
+
+
 a {
   color: #562a25;
   transition: 0.5s;
